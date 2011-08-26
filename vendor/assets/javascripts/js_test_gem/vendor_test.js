@@ -1,0 +1,1 @@
+alert('engine vendor asset');
