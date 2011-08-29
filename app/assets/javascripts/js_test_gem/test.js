@@ -1,1 +1,0 @@
-alert('engine app asset');
