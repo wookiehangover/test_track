@@ -4,7 +4,9 @@
 	<meta charset="UTF-8" />
 	<title>QUnit Test Suite</title>
 	<%= stylesheet_link_tag 'qunit/qunit' %>
-  <%= javascript_include_tag 'js_test_gem/qunit' %>
+  <%= javascript_include_tag 'js_test_gem/qunit_suite' %>
+  <%= javascript_include_tag JsTestGem.application_manifest %>
+  <%= javascript_include_tag JsTestGem.qunit_manifest %>
 </head>
 <body>
 	<h1 id="qunit-header">QUnit Test Suite</h1>
