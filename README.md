@@ -3,7 +3,7 @@
 This gem provides sane defaults for using Javascript test frameworks in
 the Rails 3.1 Asset Pipeline. It allows you to write and run
 [Qunit][qunit] or [Jasmine][jasmine] tests while leveraging the new
-compiling power of the Tilt and Sprockets 2.
+compiling power of Tilt and Sprockets 2.
 
 ## How it works
 
@@ -20,7 +20,7 @@ In your Rails 3.1 app, just add it to your Gemfile, like this:
     gem 'test_track'
 
 Then create a manifest file named `qunit.js` or `jasmine.js` which
-requires all of your test code, include any custom helpers.
+requires all of your test code, including any custom helpers.
 
     app/assets/javascripts/jasmine.js
 
