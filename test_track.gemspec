@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.summary     = "Painless Javascript testing for Rails 3.1+"
   s.description = "TestTrack provides sane defaults for using Javascript test frameworks in the Rails 3.1 Asset Pipeline"
 
-  s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.1.0.rc8"
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "coffee-rails" , "~> 3.1.0.rc"
 end
