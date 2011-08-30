@@ -7,7 +7,7 @@ compiling power of the Tilt and Sprockets 2.
 
 ## How it works
 
-TestTest provides a mountable engine whichs provides routes to
+TestTest is a mountable engine whichs provides routes to
 Javascript test runners pre-loaded with your application's code and
 tests. In addition to the test runners, [Sinon.js][sinon] is included
 for mocking, spies, and XHR faking. It's usage is entirely optional and
