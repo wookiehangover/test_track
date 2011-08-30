@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 Bundler.require
-require "js_test_gem"
+require "test_track"
 
 module Dummy
   class Application < Rails::Application

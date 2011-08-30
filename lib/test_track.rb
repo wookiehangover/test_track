@@ -1,6 +1,6 @@
 require 'active_support/core_ext/module/attribute_accessors'
 
-module JsTestGem
+module TestTrack
 
 	mattr_accessor :custom_config
 	@@custom_config = false
@@ -23,9 +23,9 @@ module JsTestGem
 	def self.setup
 		@@custom_config = true
 		yield self
-		require 'js_test_gem/engine'
+		require 'test_track/engine'
 	end
 
-	require 'js_test_gem/engine' unless @@custom_config
+	require 'test_track/engine' unless @@custom_config
 end
 

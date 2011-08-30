@@ -1,4 +1,4 @@
-module JsTestGem
+module TestTrack
 
 	class TestsController < ActionController::Base
 		def index; end
