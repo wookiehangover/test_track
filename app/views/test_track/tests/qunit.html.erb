@@ -5,7 +5,7 @@
   <title>QUnit Test Suite</title>
   <%= stylesheet_link_tag 'qunit/qunit' %>
   <%= javascript_include_tag 'test_track/qunit_suite' %>
-  <%= javascript_include_tag TestTrack.application_manifest %>
+  <%= javascript_include_multiple TestTrack.application_manifest %>
   <%= javascript_include_tag TestTrack.qunit_manifest %>
 </head>
 <body>

@@ -6,8 +6,7 @@
 
   <%= stylesheet_link_tag    "jasmine/jasmine" %>
   <%= javascript_include_tag "test_track/jasmine_suite" %>
-
-  <%= javascript_include_tag TestTrack.application_manifest %>
+  <%= javascript_include_multiple TestTrack.application_manifest %>
   <%= javascript_include_tag TestTrack.jasmine_manifest %>
 
   <script type="text/javascript">
