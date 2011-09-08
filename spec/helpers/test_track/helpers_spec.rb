@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TestsHelper do
+describe TestTrack::TestsHelper do
   describe "javascript_include_multiple" do
 
     it "should create a single script tag if passed a string" do

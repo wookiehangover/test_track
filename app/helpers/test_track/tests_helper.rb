@@ -1,4 +1,4 @@
-module TestsHelper
+module TestTrack::TestsHelper
   def javascript_include_multiple( path )
     output = ""
 
