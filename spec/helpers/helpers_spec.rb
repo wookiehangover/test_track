@@ -12,5 +12,6 @@ describe TestsHelper do
       output.should include( 'script src="/javascripts/lib.js"' )
       output.should include( 'script src="/javascripts/application.js"' )
     end
+
   end
 end

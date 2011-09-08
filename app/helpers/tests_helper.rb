@@ -1,5 +1,4 @@
 module TestsHelper
-
   def javascript_include_multiple( path )
     output = ""
 
