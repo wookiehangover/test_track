@@ -4,7 +4,17 @@
   <meta charset="UTF-8" />
   <title>QUnit Test Suite</title>
   <%= stylesheet_link_tag 'qunit/qunit' %>
+
+  <% if TestTrack.include_sinon %>
+    <%= javascript_include_tag 'sinon/sinon-1.1.1' %>
+  <% end %>
+
   <%= javascript_include_tag 'test_track/qunit_suite' %>
+
+  <% if TestTrack.include_sinon %>
+    <%= javascript_include_tag 'sinon/sinon-qunit-1.0.0' %>
+  <% end %>
+
   <%= javascript_include_multiple TestTrack.application_manifest %>
   <%= javascript_include_tag TestTrack.qunit_manifest %>
 </head>

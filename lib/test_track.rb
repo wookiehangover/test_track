@@ -17,6 +17,9 @@ module TestTrack
   mattr_accessor :qunit_path
   @@qunit_path = "test/javascripts"
 
+  mattr_accessor :include_sinon
+  @@include_sinon = true
+
   def self.setup
     yield self
   end
