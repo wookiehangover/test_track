@@ -1,5 +1,7 @@
 # TestTrack
 
+v0.0.4
+
 This gem provides sane defaults for using Javascript test frameworks in
 the Rails 3.1 Asset Pipeline. It allows you to write and run
 [Qunit][qunit] or [Jasmine][jasmine] tests while leveraging the new
