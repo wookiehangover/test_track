@@ -28,15 +28,6 @@ describe 'Player' , ->
       expect( @player.isPlaying ).toBeTruthy()
       expect( @player.currentlyPlayingSong ).toEqual @song
 
-  # demonstrates use of spies to intercept and test method calls
-  xit 'tells the current song if the user has made it a favorite' , ->
-    spy = sinon.spy @song, 'persistFavoriteStatus'
-
-    @player.play @song
-    @player.makeFavorite()
-
-    expect( spy ).toHaveBeenCalled()
-
   # demonstrates use of expected exceptions
   describe '#resume' , ->
     it 'should throw an exception if song is already playing' , ->
@@ -45,4 +36,16 @@ describe 'Player' , ->
       expect =>
         @player.resume()
       .toThrow 'song is already playing'
+
+  it 'should use native spies', ->
+    foo = { bar: ( -> ) }
+    spyOn( foo, 'bar' )
+    foo.bar()
+    expect( foo.bar ).toHaveBeenCalled()
+
+  it 'should use Sinon spies', ->
+    foo = { bar: ( -> ) }
+    spy = sinon.spy( foo, 'bar' )
+    foo.bar()
+    expect( spy ).toHaveBeenCalled()
 

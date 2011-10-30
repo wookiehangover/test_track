@@ -69,7 +69,10 @@ In addition to the test runners, [Sinon.js][sinon] is included by
 default. It's a great set of tooling for mocking, spies, and XHR
 faking. In general, Sinon.js will not affect any pre-existing test
 suites, but there are some gotcha's. Be sure to [check the out the
-documentation][sinon-docs] if you haven't used it before
+documentation][sinon-docs] if you haven't used it before.
+
+Sinon overwrites Jasmine's spyOn implementation, so be sure to not
+include it if you plan on using that part of Jasmine.
 
 In Sinon's default settings, _setTimeout and setInterval are
 overwritten_. To change this behavior you need to modify Sinon's config
